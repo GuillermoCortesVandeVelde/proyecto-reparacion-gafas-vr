@@ -1,0 +1,60 @@
+/* Universal */
+* {
+    box-sizing: border-box;    /* Tamaño de las cajas hasta el borde */
+}
+
+/* Documento html */
+html {
+    height: 100%;    /* Altura del HTML */
+}
+
+/* Cuerpo de la página */
+.cuerpo {
+    border-radius: 10px;                        /* Borde redondeado */
+    height: 100%;                               /* Altura del body */
+    margin: 0;                                  /* Margenes del body */
+    display: grid;                              /* Usar grid para la estructura de la página */
+    grid-template-columns: 100%;                /* 1 columna que ocupa todo el ancho */
+    grid-template-rows: 85px 35px 1fr 65px;     /* 3 filas personalizadas y 1fr en body */
+}
+
+/* Contenedor que contiene los elementos de la cabecera */
+.contenedor-cabecera {
+    height: 100%;                           /* Altura del contenedor */
+    background-color: blue;               /* Color de fondo */
+    display: flex;                          /* Usar flex para poner horizontalmente los elementos */
+    justify-content: space-between;         /* Separar los elementos con espacio intermedio */
+    padding: 5px 25px 5px 100px;            /* Separación con el borde */
+    align-items: center;                    /* Centrar los elementos verticalmente */
+}
+
+/* Contenedor que contiene la imagen con el logo */
+.contenedor-cabecera-marca {
+    height: 100%;               /* Altura del contenedor */
+    display: flex;              /* Usar flex para poner horizontalmente los elementos*/
+    gap: 15px;                  /* Espacio entre cada elemento (flex) */
+    align-items: center;        /* Centrar los elementos verticalmente */
+}
+
+/* Contenedor de la imagen */
+.contenedor-cabecera-marca img {
+    height: 85%;        /* Altura de la imagen */
+    place-items: stretch;
+}
+
+.contenedor-cabecera-marca p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.contenedor-cabecera-boton {
+    display: inline-block;
+}
+
+.contenido-principal {
+    background-color: red;
+}
+
+.pie {
+    background-color: yellow;
+}
