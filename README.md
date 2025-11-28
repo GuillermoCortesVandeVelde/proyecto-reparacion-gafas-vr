@@ -7,7 +7,7 @@ garantizando el óptimo funcionamiento y la durabilidad de los dispositivos.
 
 ## Estado del proyecto
 
-Planteando esquema de página y disposción de los contenidos
+Planteando esquema de página y disposición de los contenidos
 
 
 ## Checklist del proyecto
