@@ -15,16 +15,16 @@ html {
     margin: 0;                                  /* Margenes del body */
     display: grid;                              /* Usar grid para la estructura de la página */
     grid-template-columns: 100%;                /* 1 columna que ocupa todo el ancho */
-    grid-template-rows: 85px 35px 1fr 65px;     /* 3 filas personalizadas y 1fr en body */
+    grid-template-rows: 85px 53px 1fr 65px;     /* 3 filas personalizadas y 1fr en body */
 }
 
 /* Contenedor que contiene los elementos de la cabecera */
 .contenedor-cabecera {
     height: 100%;                           /* Altura del contenedor */
-    background-color: blue;               /* Color de fondo */
+    background-color: #0c4ba4;            /* Color de fondo */
     display: flex;                          /* Usar flex para poner horizontalmente los elementos */
     justify-content: space-between;         /* Separar los elementos con espacio intermedio */
-    padding: 5px 25px 5px 100px;            /* Separación con el borde */
+    padding: 5px 25px 5px 30px;             /* Separación con el borde */
     align-items: center;                    /* Centrar los elementos verticalmente */
 }
 
@@ -38,23 +38,40 @@ html {
 
 /* Contenedor de la imagen */
 .contenedor-cabecera-marca img {
-    height: 85%;        /* Altura de la imagen */
-    place-items: stretch;
+    height: 85%;                /* Altura de la imagen */
+    place-items: stretch;       /* Ajutar la imagen para que se vea entera */
+    border-radius: 10px;        /* Bordes redondeados */
 }
 
-.contenedor-cabecera-marca p {
-    color: white;
-    font-size: 1.5rem;
+/* <p> Taller de Reparación de Gafas VR */
+.titulo-cabecera {
+    color: white;         /* Color de texto blanco */
+    font-size: 1.5rem;      /* Tamaño del texto */
+    margin: 0;              /* Quitar el margen */
 }
 
+/* <p> Alumnos de 2º SMR */
+.subtitulo-cabecera {
+    color: rgba(255, 255, 255, 0.6);        /* Color "transparentado" */
+    margin: 0;                                /* Quitar el margen */
+}
+
+/* Enlace a página de contacto */
 .contenedor-cabecera-boton {
-    display: inline-block;
+    display: inline-block;      /* Mostrar como bloque en linea */
 }
 
+/* Menú de navegación */
+.menu {
+    background-color: #0c4ba4d5;        /* Color de fondo */
+}
+
+/* Main de la página */
 .contenido-principal {
-    background-color: red;
+    background-color: red;      /* Color provisional */
 }
 
+/* Footer de la página */
 .pie {
-    background-color: yellow;
+    background-color: yellow;       /* Color provisional */
 }
