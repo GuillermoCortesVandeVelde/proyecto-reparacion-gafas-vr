@@ -15,7 +15,7 @@ html {
     margin: 0;                                  /* Margenes del body */
     display: grid;                              /* Usar grid para la estructura de la página */
     grid-template-columns: 100%;                /* 1 columna que ocupa todo el ancho */
-    grid-template-rows: auto 75px 1fr 65px;     /* 3 filas personalizadas y 1fr en body */
+    grid-template-rows: auto 37.5px 1fr 32.5px;     /* 3 filas personalizadas y 1fr en body */
     min-width: 815px;
     min-height: 100vh;
 }
@@ -26,7 +26,7 @@ html {
     background-color: #0c4ba4;            /* Color de fondo */
     display: flex;                          /* Usar flex para poner horizontalmente los elementos */
     justify-content: space-between;         /* Separar los elementos con espacio intermedio */
-    padding: 15px 30px 15px 30px;             /* Separación con el borde */
+    padding: 7.5px 15px 7.5px 15px;             /* Separación con el borde */
     align-items: center;                    /* Centrar los elementos verticalmente */
 }
 
@@ -34,13 +34,13 @@ html {
 .contenedor-cabecera-marca {
     height: 100%;               /* Altura del contenedor */
     display: flex;              /* Usar flex para poner horizontalmente los elementos*/
-    gap: 25px;                  /* Espacio entre cada elemento (flex) */
+    gap: 20px;                  /* Espacio entre cada elemento (flex) */
     align-items: center;        /* Centrar los elementos verticalmente */
 }
 
 /* Contenedor de la imagen */
 .contenedor-cabecera-marca img {
-    height: 100px;                /* Altura de la imagen */
+    height: 60px;                /* Altura de la imagen */
     place-items: stretch;       /* Ajutar la imagen para que se vea entera */
     border-radius: 10px;        /* Bordes redondeados */
 }
@@ -48,7 +48,7 @@ html {
 /* <p> Taller de Reparación de Gafas VR */
 .titulo-cabecera {
     color: white;         /* Color de texto blanco */
-    font-size: 3rem;        /* Tamaño del texto */
+    font-size: 1.5rem;        /* Tamaño del texto */
     margin: 0;              /* Quitar el margen */
 }
 
@@ -56,7 +56,7 @@ html {
 .subtitulo-cabecera {
     color: rgba(255, 255, 255, 0.6);        /* Color "transparentado" */
     margin: 0;                                /* Quitar el margen */
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Contenedor del enlace a la página de contacto */
@@ -70,10 +70,10 @@ html {
 /* Enlace a página de contacto */
 .cabecera-boton {
     display: inline-block;      /* Mostrar como bloque en linea */
-    padding: 1.5rem;
+    padding: 0.75rem;
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
 }
 
 /* Menú de navegación */
@@ -99,7 +99,7 @@ html {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .menu-lista li a {
