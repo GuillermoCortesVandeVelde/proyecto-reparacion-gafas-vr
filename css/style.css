@@ -16,7 +16,7 @@ html {
     display: grid;                              /* Usar grid para la estructura de la página */
     grid-template-columns: 100%;                /* 1 columna que ocupa todo el ancho */
     grid-template-rows: auto 37.5px 1fr 32.5px;     /* 3 filas personalizadas y 1fr en body */
-    min-width: 815px;
+    min-width: 580px;
     min-height: 100vh;
 }
 
