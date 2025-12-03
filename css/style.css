@@ -10,14 +10,14 @@ html {
 
 /* Cuerpo de la página */
 .cuerpo {
-    border-radius: 10px;                        /* Borde redondeado */
-    height: 100%;                               /* Altura del body */
-    margin: 0;                                  /* Margenes del body */
-    display: grid;                              /* Usar grid para la estructura de la página */
-    grid-template-columns: 100%;                /* 1 columna que ocupa todo el ancho */
-    grid-template-rows: auto 37.5px 1fr 32.5px;     /* 3 filas personalizadas y 1fr en body */
-    min-width: 580px;
-    min-height: 100vh;
+    border-radius: 10px;                            /* Borde redondeado */
+    height: 100%;                                   /* Altura del body */
+    margin: 0;                                      /* Margenes del body */
+    display: grid;                                  /* Usar grid para la estructura de la página */
+    grid-template-columns: 100%;                    /* 1 columna que ocupa todo el ancho */
+    grid-template-rows: auto 37.5px 1fr 50px;       /* 3 filas personalizadas y 1fr en body */
+    min-width: 580px;                               /* Ancho mínimo */
+    min-height: 100vh;                              /* Altura del ViewPort */
 }
 
 /* Contenedor que contiene los elementos de la cabecera */
@@ -26,7 +26,7 @@ html {
     background-color: #0c4ba4;            /* Color de fondo */
     display: flex;                          /* Usar flex para poner horizontalmente los elementos */
     justify-content: space-between;         /* Separar los elementos con espacio intermedio */
-    padding: 7.5px 15px 7.5px 15px;             /* Separación con el borde */
+    padding: 7.5px 15px 7.5px 15px;         /* Separación con el borde */
     align-items: center;                    /* Centrar los elementos verticalmente */
 }
 
@@ -48,7 +48,7 @@ html {
 /* <p> Taller de Reparación de Gafas VR */
 .titulo-cabecera {
     color: white;         /* Color de texto blanco */
-    font-size: 1.5rem;        /* Tamaño del texto */
+    font-size: 1.5rem;      /* Tamaño del texto */
     margin: 0;              /* Quitar el margen */
 }
 
@@ -56,69 +56,105 @@ html {
 .subtitulo-cabecera {
     color: rgba(255, 255, 255, 0.6);        /* Color "transparentado" */
     margin: 0;                                /* Quitar el margen */
-    font-size: 1rem;
+    font-size: 1rem;                          /* Tamaño de la letra */
 }
 
 /* Contenedor del enlace a la página de contacto */
 .contenedor-cabecera-boton {
     background-color: aliceblue;        /* Color de fondo del botón */
-    height: auto;
-    width: auto;
-    border-radius: 10px;
+    height: auto;                         /* Altura automatica */
+    width: auto;                          /* Anchura automatica */
+    border-radius: 10px;                  /* Borde redondeado */
+    border: 0.1rem solid black;         /* Borde de la caja */
+    transition: 0.3s ease-out;            /* Ajuste de la animación */
 }
+
+/* Ratón por encima del botón */
+.contenedor-cabecera-boton:hover {
+    transform: scale(1.03);     /* Animación de escalada */
+}
+
 
 /* Enlace a página de contacto */
 .cabecera-boton {
     display: inline-block;      /* Mostrar como bloque en linea */
-    padding: 0.75rem;
-    text-decoration: none;
-    color: black;
-    font-size: 0.75rem;
+    padding: 0.6rem;            /* Margen interior */
+    text-decoration: none;      /* Sin decoración */
+    color: black;             /* Color de texto */
+    font-size: 0.9rem;          /* Tamaño de letra */
 }
 
 /* Menú de navegación */
 .menu {
-    background-color: #0c4ba4d5;        /* Color de fondo */
-    align-content: center;
+    background-color: #f0f0f0;        /* Color de fondo */
+    align-content: center;              /* Alinear verticalmente en el centro */
 }
 
+/* Lista del menú de navegación */
 .menu-lista {
-    display: flex;
-    list-style-type: none;
-    /* gap: 15px; */
-    align-content: center;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    padding: 0;
+    display: grid;                                                  /* Contenedor flexible grid */
+    grid-template-columns: repeat(auto-fit, minmax(0px, auto));     /* Columnas del grid */
+    grid-template-rows: 100%;                                       /* Filas del grid */
+    list-style-type: none;                                          /* Estilo de la lista */
+    align-content:center;                                           /* Alinear verticalmente en el centro */
+    margin: 0;                                                      /* Quitar el margen */
+    height: 100%;                                                   /* Ocupa todo el div en altura */
+    width: 100%;                                                    /* Ocupa todo el div en anchura */
+    place-items: center;                                            /* Alinear los items al centro */
+    place-content: start;                                           /* Alinear el contenido al centro */
+    border-top: 1px solid darkblue;                               /* Borde superior */
+    padding: 0;                                                     /* Quitar el margen interior */
+    background-color: white;                                      /* Color de fondo */
 }
 
+/* Cada elemento de la lista del menú de navegación */
 .menu-lista li {
-    align-content: center;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border: 1px solid black;
+    align-content: center;                    /* Alinear verticalmente en el centro */
+    display: inline-block;                    /* Comportarse como elemento en linea */
+    height: 100%;                             /* Altura completa */
+    width: 100%;                              /* Anchura completa */
+    border-left: 1px solid darkblue;        /* Borde izquierdo */
+    border-right: 1px solid darkblue;       /* Borde derecho */
 }
 
+/* Primer elemento de la lista */
+.menu-lista li:first-child {
+    border-left: 1.9px solid darkblue;      /* Borde izquierdo */
+}
+
+/* Último elemento de la lista */
+.menu-lista li:last-child {
+    border-right: 2px solid darkblue;       /* Borde derecho */
+}
+
+/* Los enlaces de los elementos de la lista */
 .menu-lista li a {
-    display: inline-block;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    align-content: center;
+    display: inline-block;            /* Comportarse como elemento en linea */
+    background-color: white;        /* Color del fondo */
+    height: 100%;                     /* Altura completa */
+    width: 100%;                      /* Anchura completa */
+    align-content: center;            /* Alinear verticalmente el contenido */
+    text-decoration: none;            /* Quitar decoración al texto */
+    color: black;                   /* Color de texto */
+    transition: 0.2s ease-out;        /* Ajuste de la animación */
 }
 
+/* Ratón por encima de los enlaces */
+.menu-lista li a:hover {
+    transform: scale(0.93);                   /* Animación de escalada */
+    border-bottom: 3px solid #0c4ba4;       /* Borde inferior */
+}
+
+/* El parrafo de cada enlace de los elementos de la lista */
 .menu-lista li a p {
-    padding: 0;
-    margin: 0;
-    justify-self: center;
+    padding: 0 25px;            /* Quitar el margen interior */
+    margin: 0;                  /* Quitar el margen */
+    justify-self: center;       /* Alinearse a si mismo horizontalmente en el centro */
 }
 
 /* Main de la página */
 .contenido-principal {
-    background-color: red;      /* Color provisional */
+    background-color: #f0f0f0;      /* Color provisional */
 }
 
 /* Footer de la página */
