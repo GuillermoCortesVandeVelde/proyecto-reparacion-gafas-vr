@@ -40,7 +40,7 @@ html {
 
 /* Contenedor de la imagen */
 .contenedor-cabecera-marca img {
-    height: 60px;                /* Altura de la imagen */
+    height: 60px;               /* Altura de la imagen */
     place-items: stretch;       /* Ajutar la imagen para que se vea entera */
     border-radius: 10px;        /* Bordes redondeados */
 }
@@ -122,6 +122,18 @@ html {
     border-left: 1.9px solid darkblue;      /* Borde izquierdo */
 }
 
+/* Clase para seleccionar en el menú que página estamos */
+.menu-sombreado {
+    background-color: #0c4ba433;        /* Color de fondo */
+}
+
+/* Clase para seleccionar en el menú que página estamos */
+.menu-sombreado a {
+    border-bottom: 3px solid #0c4ba4;       /* Borde inferior */
+    transform: scale(0.93);                 /* Animación de escalado */
+}
+
+
 /* Último elemento de la lista */
 .menu-lista li:last-child {
     border-right: 2px solid darkblue;       /* Borde derecho */
@@ -130,7 +142,6 @@ html {
 /* Los enlaces de los elementos de la lista */
 .menu-lista li a {
     display: inline-block;            /* Comportarse como elemento en linea */
-    background-color: white;        /* Color del fondo */
     height: 100%;                     /* Altura completa */
     width: 100%;                      /* Anchura completa */
     align-content: center;            /* Alinear verticalmente el contenido */
@@ -147,7 +158,7 @@ html {
 
 /* El parrafo de cada enlace de los elementos de la lista */
 .menu-lista li a p {
-    padding: 0 25px;            /* Quitar el margen interior */
+    padding: 0 25px;            /* Quitar el margen interior superior e inferior y añado margen interior a los lados */
     margin: 0;                  /* Quitar el margen */
     justify-self: center;       /* Alinearse a si mismo horizontalmente en el centro */
 }
