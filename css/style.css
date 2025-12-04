@@ -161,6 +161,7 @@ html {
     padding: 0 25px;            /* Quitar el margen interior superior e inferior y añado margen interior a los lados */
     margin: 0;                  /* Quitar el margen */
     justify-self: center;       /* Alinearse a si mismo horizontalmente en el centro */
+    background-color: #ffffff00;
 }
 
 /* Main de la página */
