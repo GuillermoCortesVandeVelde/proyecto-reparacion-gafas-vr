@@ -11,12 +11,11 @@ html {
 /* Cuerpo de la página */
 .cuerpo {
     border-radius: 10px;                            /* Borde redondeado */
-    height: 100%;                                   /* Altura del body */
     margin: 0;                                      /* Margenes del body */
     display: grid;                                  /* Usar grid para la estructura de la página */
     grid-template-columns: 100%;                    /* 1 columna que ocupa todo el ancho */
     grid-template-rows: auto 37.5px 1fr 50px;       /* 3 filas personalizadas y 1fr en body */
-    min-width: 580px;                               /* Ancho mínimo */
+    /* min-width: 580px;                               Ancho mínimo */
     min-height: 100vh;                              /* Altura del ViewPort */
 }
 
@@ -67,6 +66,7 @@ html {
     border-radius: 10px;                  /* Borde redondeado */
     border: 0.1rem solid black;         /* Borde de la caja */
     transition: 0.3s ease-out;            /* Ajuste de la animación */
+    margin-left: 20px;
 }
 
 /* Ratón por encima del botón */
@@ -92,9 +92,8 @@ html {
 
 /* Lista del menú de navegación */
 .menu-lista {
-    display: grid;                                                  /* Contenedor flexible grid */
-    grid-template-columns: repeat(auto-fit, minmax(0px, auto));     /* Columnas del grid */
-    grid-template-rows: 100%;                                       /* Filas del grid */
+    display: flex;                                                  /* Contenedor flexible grid */
+    flex-wrap: wrap;
     list-style-type: none;                                          /* Estilo de la lista */
     align-content:center;                                           /* Alinear verticalmente en el centro */
     margin: 0;                                                      /* Quitar el margen */
@@ -112,7 +111,7 @@ html {
     align-content: center;                    /* Alinear verticalmente en el centro */
     display: inline-block;                    /* Comportarse como elemento en linea */
     height: 100%;                             /* Altura completa */
-    width: 100%;                              /* Anchura completa */
+    flex: 1 1 auto;
     border-left: 1px solid darkblue;        /* Borde izquierdo */
     border-right: 1px solid darkblue;       /* Borde derecho */
 }
@@ -167,9 +166,56 @@ html {
 /* Main de la página */
 .contenido-principal {
     background-color: #f0f0f0;      /* Color provisional */
+    justify-items: center;
+    height: auto;
+}
+
+.contenedor-imagen-principal {
+    background: url(../media/images/Banner.png);
+    background-size: cover;
+    background-position-x: 30%;
+    width: 100%;
+    height: 576px;
+}
+
+.contenedor-imagen-principal p {
+    margin: 0;
 }
 
 /* Footer de la página */
 .pie {
-    background-color: yellow;       /* Color provisional */
+    background-color: #0c4ba4;
+    color: white;
+    justify-items: center;
+}
+
+/* Versión para pantallas pequeñas */
+@media (width <= 506px) {
+    .contenedor-cabecera-marca img {
+        height: 45px;
+    }
+
+    .cabecera-boton {
+        padding: 0.5rem;            /* Margen interior */
+        font-size: 0.7rem;          /* Tamaño de letra */
+    }
+
+    .titulo-cabecera {
+        font-size: 1rem;
+    }
+
+    .subtitulo-cabecera {
+        font-size: 0.9rem;
+    }
+
+    .menu-lista li {
+        flex: 0 0 50%;       /* 2 elementos por fila */
+        height: 50%;
+        /* o 33.33% si quieres 3 por fila */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }   
+
+    .cuerpo {
+        grid-template-rows: auto 75px 1fr 50px;       /* 3 filas personalizadas y 1fr en body */
+    }
 }
