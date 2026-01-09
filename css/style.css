@@ -169,7 +169,7 @@ html {
     justify-items: center;
     height: auto;
 }
-
+/* contenido tienda */
 .contenedor-imagen-principal {
     background: url(../media/images/Banner.png);
     background-size: cover;
@@ -180,6 +180,51 @@ html {
 
 .contenedor-imagen-principal p {
     margin: 0;
+}
+
+.contenedor-tarjetas-productos {
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.tarjeta {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    align-items: center;
+    align-content: center;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: min(900px, 95%);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation-timing-function: ease;
+}
+
+.tarjeta img {
+    max-width: 75%;
+    border-radius: 10px;
+}
+
+.tarjeta  h2 {
+    color: #333;
+}
+
+.tarjeta .dercripcion-producto {
+    color: #777;
+}
+
+.tarjeta .precio {
+    font-size: 1.25rem;
+    color: #E74C3C;
 }
 
 /* Footer de la página */
