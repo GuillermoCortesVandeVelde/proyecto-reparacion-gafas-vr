@@ -21,6 +21,7 @@ Planteando esquema de página y disposición de los contenidos
 - [ ] Creación de página Web.
 - [ ] Proyecto presentado.
 - [ ] Visto bueno del proyecto.
+- [ ] Compra de los materiales.
 - [ ] Montaje y preparación de los servicios.
 - [ ] Comprobaciones y puesta a punto.
 - [ ] Proyecto funcionando.
