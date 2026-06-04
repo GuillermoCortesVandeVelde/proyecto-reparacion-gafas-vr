@@ -19,9 +19,9 @@ Planteando esquema de página y disposición de los contenidos
 - [x] Presuspuesto que necesitamos.
 - [x] Justificación de valor.
 - [ ] Creación de página Web.
-- [x] Proyecto presentado.
-- [x] Visto bueno del proyecto.
-- [x] Compra de los materiales.
-- [x] Montaje y preparación de los servicios.
-- [x] Comprobaciones y puesta a punto.
+- [ ] Proyecto presentado.
+- [ ] Visto bueno del proyecto.
+- [ ] Compra de los materiales.
+- [ ] Montaje y preparación de los servicios.
+- [ ] Comprobaciones y puesta a punto.
 - [ ] Proyecto funcionando.
